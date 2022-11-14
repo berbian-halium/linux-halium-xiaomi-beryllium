@@ -55,7 +55,7 @@ Module.symvers
 #
 # Debian directory (make deb-pkg)
 #
-/debian/
+#/debian/
 
 #
 # tar directory (make tar*-pkg)
@@ -117,3 +117,23 @@ all.config
 
 # fetched Android config fragments
 kernel/configs/android-*.cfg
+
+#
+# Debian packaging berbian
+!debian
+debian/upstream/signing-key.asc
+debian/changelog
+debian/control
+debian/files
+debian/patches
+debian/linux-*/
+debian/*.substvars
+debian/*.debhelper
+debian/debhelper-build-stamp
+debian/*.postinst
+
+# hybris-mobian changes
+!.travis.yml
+
+# Added by Droidian
+!.circleci/
