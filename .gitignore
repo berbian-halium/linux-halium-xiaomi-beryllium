@@ -121,9 +121,15 @@ kernel/configs/android-*.cfg
 #
 # Debian packaging berbian
 !debian
+!debian/control
+!debian/compat
+!debian/copyright 
+!debian/initramfs-overlay 
+!debian/kernel-info.mk 
+!debian/rules 
+!debian/source
 debian/upstream/signing-key.asc
 debian/changelog
-debian/control
 debian/files
 debian/patches
 debian/linux-*/
