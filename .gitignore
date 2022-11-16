@@ -138,6 +138,13 @@ debian/*.debhelper
 debian/debhelper-build-stamp
 debian/*.postinst
 
+# Berbian exclusions:
+arch/arm64/configs/berbian_extra.config
+arch/arm64/configs/berbian_halium_waydroid.config
+arch/arm64/configs/beryllium_berbian_defconfig
+arch/arm64/configs/beryllium_berbian_mer_fixes.config
+berbian-kernel-config
+
 # hybris-mobian changes
 !.travis.yml
 
